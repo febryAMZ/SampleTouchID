@@ -1,0 +1,28 @@
+{
+    "AS_Button_ab0f952877e940268e68ae6556255a8b": {
+        "id": "AS_Button_ab0f952877e940268e68ae6556255a8b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "Form1",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a18dd5fa1b0a43c9a629f031748763bc"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___f1b2aac3ca9a41cb9505a2897431862c",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "isAuthUsingTouchSupported",
+            "display": "isAuthUsingTouchSupported",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

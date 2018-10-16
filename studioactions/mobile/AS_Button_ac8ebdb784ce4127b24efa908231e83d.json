@@ -1,0 +1,24 @@
+{
+    "AS_Button_ac8ebdb784ce4127b24efa908231e83d": {
+        "id": "AS_Button_ac8ebdb784ce4127b24efa908231e83d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "Form1",
+            "type": "forms",
+            "platform": null,
+            "KUID": "a18dd5fa1b0a43c9a629f031748763bc"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__j9bbba21ec474d28a6ad37c50dfbf8f6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var TouchIdStatus = kony.localAuthentication.getStatusForAuthenticationMode(constants.LOCAL_AUTHENTICATION_MODE_TOUCH_ID);\nkony.print(\"Kony TouchID status : \" + TouchIdStatus);\nif(TouchIdStatus == 5000){\n  kony.ui.Alert({message: \"AUTHENTICATION BY TOUCHID SUPPORTED\", alertType: constants.ALERT_TYPE_INFO, yesLabel:\"Close\"}, {});\n}else{\n  var msg = \"TOUCHID AUTHENTICATION RETURNED THE STATUS :: \"+TouchIdStatus;\n  kony.ui.Alert({message: msg, alertType: constants.ALERT_TYPE_INFO, yesLabel:\"Close\"}, {});\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}
